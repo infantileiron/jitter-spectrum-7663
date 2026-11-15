@@ -14,3 +14,8 @@ class Detrend(str,Enum):
 class FFTWindow(str,Enum):
  hann="hann"
  boxcar="boxcar"
+class SignificanceStatus(str,Enum):
+ queued="queued"
+ running="running"
+ available="available"
+ failed="failed"

@@ -3,3 +3,5 @@ export const RUN_STATUS:Record<string,string>={queued:'排队中',running:'计�
 export const DETRENDS:Record<string,string>={mean:'去均值',linear:'去线性趋势'};
 export const WINDOWS:Record<string,string>={hann:'Hann窗',boxcar:'Boxcar矩形窗'};
 export const DECISIONS:Record<string,string>={accepted:'接受并记录边界',needs_attention:'需要继续核查'};
+export const SIGNIFICANCE_STATUS:Record<string,string>={queued:'待计算',running:'校准中',available:'可用',failed:'失败'};
+export const CALIBRATION_PHASE:Record<string,string>={queued:'排队等待后台',starting:'准备冻结输入',observing:'计算观测统计量',simulating:'按原采样时刻重做去趋势与全频搜索',available:'整批校准完成',failed:'整批失败'};
